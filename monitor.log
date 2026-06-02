@@ -1,0 +1,27 @@
+--- OMNI-SENTINEL COGNITIVE EXECUTION ENVIRONMENT MONITOR STARTING ---
+START TIME: 2026-06-02 04:27:21.511807
+
+[2026-06-02 04:27:21] CHECKPOINT
+[2026-06-02 04:27:21] G-SRI: 28.8 (Threshold: < 40.0) -> PASS
+[2026-06-02 04:27:21] ATTESTATION: PCR_MATCH=TRUE
+[2026-06-02 04:27:21] TRIGGERING WORM AUDIT COMMIT...
+/app/pqc_worm_logger.py:11: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.utcnow().isoformat(),
+[2026-06-02 04:27:21.546035] COMMITTING BATCH: WORM_20260602_042721
+[2026-06-02 04:27:21.546047] TARGET: s3://omni-sentinel-worm-audit-2026/batches/WORM_20260602_042721.json
+[2026-06-02 04:27:21.546051] OBJECT_LOCK_RETAIN_UNTIL: 2036-01-01T00:00:00Z
+[2026-06-02 04:27:21.546055] CHECKSUM (SHA3-512): 89860bf9a4c6957553ef535e37a2ee6debc94e83be588c22640e85130fbb16a174b5cbddcb38f771986be8a5edbef6d2c248bde4a0f99cc49eeb68e203540f84
+[2026-06-02 04:27:21.546058] STATUS: SUCCESS
+
+
+[2026-06-02 04:28:21] CHECKPOINT
+[2026-06-02 04:28:21] G-SRI: 21.21 (Threshold: < 40.0) -> PASS
+[2026-06-02 04:28:21] ATTESTATION: PCR_MATCH=TRUE
+[2026-06-02 04:28:21] TRIGGERING WORM AUDIT COMMIT...
+/app/pqc_worm_logger.py:11: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.utcnow().isoformat(),
+[2026-06-02 04:28:21.590159] COMMITTING BATCH: WORM_20260602_042821
+[2026-06-02 04:28:21.590171] TARGET: s3://omni-sentinel-worm-audit-2026/batches/WORM_20260602_042821.json
+[2026-06-02 04:28:21.590175] OBJECT_LOCK_RETAIN_UNTIL: 2036-01-01T00:00:00Z
+[2026-06-02 04:28:21.590178] CHECKSUM (SHA3-512): 476eb8bb63cbedd617ba707095d9b62633322156c454bace25a0ed8716759e846aa869835895c9cc86efe14cd590766167228aa6b0ed6c9bc5ec367d9fb3f9bd
+[2026-06-02 04:28:21.590181] STATUS: SUCCESS
