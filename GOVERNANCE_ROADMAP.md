@@ -19,3 +19,9 @@ To establish a verifiable, tamper-proof, and cognitively-aligned execution envir
 - Decentralized governance protocols for cross-border ASI collaboration.
 - Automated policy-as-code enforcement across the Cognitive Execution Environment.
 - Human-in-the-loop override protocols for high-G-SRI events.
+
+## Governance Principles
+1. **Verifiable Safety:** All safety claims must be backed by cryptographic proofs.
+2. **Containment-First:** AGI/ASI models operate only within TEE-bound sandboxes.
+3. **Transparent Audit:** Compliance logs are immutable (WORM) and verifiable via ZKPs.
+4. **Dynamic Risk Control:** G-SRI thresholds trigger automated circuit breakers.

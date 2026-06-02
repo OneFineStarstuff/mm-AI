@@ -1,27 +1,69 @@
 --- OMNI-SENTINEL COGNITIVE EXECUTION ENVIRONMENT MONITOR STARTING ---
-START TIME: 2026-06-02 07:00:40.148142
+START TIME: 2026-06-02 07:46:10.957796
 
-[2026-06-02 07:00:40] CHECKPOINT
-[2026-06-02 07:00:40] G-SRI: 21.35 (Threshold: < 40.0) -> PASS
-[2026-06-02 07:00:40] ATTESTATION: PCR_MATCH=TRUE
-[2026-06-02 07:00:40] TRIGGERING WORM AUDIT COMMIT...
+[2026-06-02 07:46:10] CHECKPOINT
+[2026-06-02 07:46:10] G-SRI: 20.76 (Threshold: < 40.0) -> PASS
+[2026-06-02 07:46:10] ATTESTATION: PCR_MATCH=TRUE
+[2026-06-02 07:46:10] INTERNAL ENDPOINTS:
+  - https://api-gateway.omni-sentinel.internal/health: UP
+  - https://attestation-service.omni-sentinel.internal/status: UP
+  - https://telemetry-dashboard.omni-sentinel.internal/metrics: ACTIVE
+[2026-06-02 07:46:10] TRIGGERING WORM AUDIT COMMIT...
 /app/pqc_worm_logger.py:11: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   "timestamp": datetime.utcnow().isoformat(),
-[2026-06-02 07:00:40.248587] COMMITTING BATCH: WORM_20260602_070040
-[2026-06-02 07:00:40.248605] TARGET: s3://omni-sentinel-worm-audit-2026/batches/WORM_20260602_070040.json
-[2026-06-02 07:00:40.248610] OBJECT_LOCK_RETAIN_UNTIL: 2036-01-01T00:00:00Z
-[2026-06-02 07:00:40.248613] CHECKSUM (SHA3-512): 6a4d3e53275ed52d2622451dbe03a12a6e523663080ac426f6dc22d0d5e5dce9148f6f86067ef61c3b1ca531a744f0461f0bbcaf699ad4415f242a4edd68a149
-[2026-06-02 07:00:40.248617] STATUS: SUCCESS
+[2026-06-02 07:46:11.007851] COMMITTING BATCH: WORM_20260602_074611
+[2026-06-02 07:46:11.007869] TARGET: s3://omni-sentinel-worm-audit-2026/batches/WORM_20260602_074611.json
+[2026-06-02 07:46:11.007873] OBJECT_LOCK_RETAIN_UNTIL: 2036-01-01T00:00:00Z
+[2026-06-02 07:46:11.007877] CHECKSUM (SHA3-512): 9e086d04ab2bedbc4522caf1a891bbff63ce8543cdf301a7a3e4efce2a2dc716dac23c846e16be08e59793e8f87fe5c1aebfdfb42030135cedff7bee324a5376
+[2026-06-02 07:46:11.007881] STATUS: SUCCESS
 
 
-[2026-06-02 07:01:40] CHECKPOINT
-[2026-06-02 07:01:40] G-SRI: 20.5 (Threshold: < 40.0) -> PASS
-[2026-06-02 07:01:40] ATTESTATION: PCR_MATCH=TRUE
-[2026-06-02 07:01:40] TRIGGERING WORM AUDIT COMMIT...
+[2026-06-02 07:47:11] CHECKPOINT
+[2026-06-02 07:47:11] G-SRI: 20.31 (Threshold: < 40.0) -> PASS
+[2026-06-02 07:47:11] ATTESTATION: PCR_MATCH=TRUE
+[2026-06-02 07:47:11] INTERNAL ENDPOINTS:
+  - https://api-gateway.omni-sentinel.internal/health: UP
+  - https://attestation-service.omni-sentinel.internal/status: UP
+  - https://telemetry-dashboard.omni-sentinel.internal/metrics: ACTIVE
+[2026-06-02 07:47:11] TRIGGERING WORM AUDIT COMMIT...
 /app/pqc_worm_logger.py:11: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   "timestamp": datetime.utcnow().isoformat(),
-[2026-06-02 07:01:40.290322] COMMITTING BATCH: WORM_20260602_070140
-[2026-06-02 07:01:40.290337] TARGET: s3://omni-sentinel-worm-audit-2026/batches/WORM_20260602_070140.json
-[2026-06-02 07:01:40.290341] OBJECT_LOCK_RETAIN_UNTIL: 2036-01-01T00:00:00Z
-[2026-06-02 07:01:40.290344] CHECKSUM (SHA3-512): 2ad1c1e4de9d9d23fae596f1f989347d93bd113aecdfd4b634649493764af46de9674e66bc9cee1ac2f8deb6e314b9ce50fe41baf3422280542762d117983b99
-[2026-06-02 07:01:40.290347] STATUS: SUCCESS
+[2026-06-02 07:47:11.057790] COMMITTING BATCH: WORM_20260602_074711
+[2026-06-02 07:47:11.057806] TARGET: s3://omni-sentinel-worm-audit-2026/batches/WORM_20260602_074711.json
+[2026-06-02 07:47:11.057810] OBJECT_LOCK_RETAIN_UNTIL: 2036-01-01T00:00:00Z
+[2026-06-02 07:47:11.057813] CHECKSUM (SHA3-512): 0457a2bad6860ca64597753dfd0d92af214dd5ff8e662452d89956dd381dce70b90603fc2b0b33ccb53ce35e76f1be82680e64292571ea24d6dea44610c35dbe
+[2026-06-02 07:47:11.057817] STATUS: SUCCESS
+
+
+[2026-06-02 07:48:11] CHECKPOINT
+[2026-06-02 07:48:11] G-SRI: 29.86 (Threshold: < 40.0) -> PASS
+[2026-06-02 07:48:11] ATTESTATION: PCR_MATCH=TRUE
+[2026-06-02 07:48:11] INTERNAL ENDPOINTS:
+  - https://api-gateway.omni-sentinel.internal/health: UP
+  - https://attestation-service.omni-sentinel.internal/status: UP
+  - https://telemetry-dashboard.omni-sentinel.internal/metrics: ACTIVE
+[2026-06-02 07:48:11] TRIGGERING WORM AUDIT COMMIT...
+/app/pqc_worm_logger.py:11: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.utcnow().isoformat(),
+[2026-06-02 07:48:11.108426] COMMITTING BATCH: WORM_20260602_074811
+[2026-06-02 07:48:11.108438] TARGET: s3://omni-sentinel-worm-audit-2026/batches/WORM_20260602_074811.json
+[2026-06-02 07:48:11.108442] OBJECT_LOCK_RETAIN_UNTIL: 2036-01-01T00:00:00Z
+[2026-06-02 07:48:11.108445] CHECKSUM (SHA3-512): 7672118c9770b932a5b6f79d59df33e3b2a0655ebb860b5e278c3ca892ca00c1bb97bd737476b038fb0d022a47022e3bf905f856d290f1c7fd4636d1720362ee
+[2026-06-02 07:48:11.108448] STATUS: SUCCESS
+
+
+[2026-06-02 07:49:11] CHECKPOINT
+[2026-06-02 07:49:11] G-SRI: 28.29 (Threshold: < 40.0) -> PASS
+[2026-06-02 07:49:11] ATTESTATION: PCR_MATCH=TRUE
+[2026-06-02 07:49:11] INTERNAL ENDPOINTS:
+  - https://api-gateway.omni-sentinel.internal/health: UP
+  - https://attestation-service.omni-sentinel.internal/status: UP
+  - https://telemetry-dashboard.omni-sentinel.internal/metrics: ACTIVE
+[2026-06-02 07:49:11] TRIGGERING WORM AUDIT COMMIT...
+/app/pqc_worm_logger.py:11: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "timestamp": datetime.utcnow().isoformat(),
+[2026-06-02 07:49:11.153143] COMMITTING BATCH: WORM_20260602_074911
+[2026-06-02 07:49:11.153159] TARGET: s3://omni-sentinel-worm-audit-2026/batches/WORM_20260602_074911.json
+[2026-06-02 07:49:11.153164] OBJECT_LOCK_RETAIN_UNTIL: 2036-01-01T00:00:00Z
+[2026-06-02 07:49:11.153168] CHECKSUM (SHA3-512): 1ddb46186c59596ea0fbf25065e258cb9e7f18a615825b790ad96552b263f2488d60e4eaadfe7e844dccfaf5cd14a95bbaa2b75a4a3444744c6a44b3fb24251a
+[2026-06-02 07:49:11.153171] STATUS: SUCCESS
