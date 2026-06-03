@@ -1,0 +1,23 @@
+{
+    "title": "Omni-Sentinel Cognitive Execution Environment (CEE)",
+    "description": "The Omni-Sentinel CEE is a secure, verifiable, and cognitively-aligned execution environment designed for the safe development and deployment of AGI and ASI systems. It integrates TEE/TPM attestation, PQC signatures, and WORM storage for regulatory compliance.",
+    "creators": [
+        {
+            "name": "Axiom Spiral",
+            "affiliation": "Omni-Sentinel Governance Lab"
+        }
+    ],
+    "access_right": "open",
+    "license": "MIT",
+    "keywords": [
+        "AI Governance",
+        "AGI Safety",
+        "ASI Containment",
+        "Post-Quantum Cryptography",
+        "Trusted Execution Environments",
+        "Zero-Knowledge Proofs",
+        "G-SIFI Compliance"
+    ],
+    "version": "2.4.0",
+    "publication_date": "2026-06-02"
+}

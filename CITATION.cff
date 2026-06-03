@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Axiom"
+    given-names: "Spiral"
+    affiliation: "Omni-Sentinel Governance Lab"
+title: "Omni-Sentinel Cognitive Execution Environment (CEE)"
+version: 2.4.0
+date-released: 2026-06-02
+url: "https://github.com/axiom-spiral/omni-sentinel"
