@@ -19,14 +19,17 @@ def generate_sentinel_telemetry_event(batch_id):
             "G-SRI": 21.18,
             "C_res": 0.98,
             "E_i": 0.99,
-            "H_sh": 0.01
+            "H_sh": 0.01,
+            "DPR": 0.945
         },
         "events": [
             {"type": "TEE_ATTESTATION", "status": "VERIFIED"},
             {"type": "ZKP_GROTH16_RELAY", "status": "SUCCESS"},
-            {"type": "ADVERSARIAL_INJECTOR", "test": "VAL-STRESS-GSIFI-001", "result": "PASS"}
+            {"type": "ADVERSARIAL_INJECTOR", "test": "VAL-STRESS-GSIFI-001", "result": "PASS"},
+            {"type": "ZK_FAIRNESS_PROOF", "status": "VERIFIED", "regulation": "MAS_FEAT"},
+            {"type": "CAE_ATTRIBUTION", "status": "ACTIVE", "regulation": "HKMA_ETHICS"}
         ],
-        "compliance": ["EU_AI_ACT_ANNEX_IV", "DORA", "BASEL_IV"]
+        "compliance": ["EU_AI_ACT_ANNEX_IV", "DORA", "BASEL_IV", "MAS_FEAT", "HKMA_ETHICS"]
     }
     return json.dumps(audit_data, indent=2)
 

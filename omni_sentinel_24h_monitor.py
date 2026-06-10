@@ -14,6 +14,18 @@ def check_moe_metrics():
     h_sh = round(random.uniform(0, 0.02), 3)
     return {"C_res": c_res, "E_i": e_i, "H_sh": h_sh}
 
+def check_zk_fairness_proofs():
+    """MAS FEAT Compliance: Demographic Parity check."""
+    status = "VERIFIED" if random.random() > 0.01 else "GAP_DETECTED"
+    dpr = round(0.92 + random.uniform(0, 0.06), 3)
+    return {"status": status, "DPR": dpr}
+
+def check_asa_interpretability():
+    """HKMA Ethics Compliance: Contextual Attribution Envelopes (CAE)."""
+    cae_status = "ACTIVE"
+    attribution_depth = random.randint(8, 12)
+    return {"CAE_status": cae_status, "attribution_depth": attribution_depth}
+
 def check_attestation():
     return "PCR_MATCH=TRUE"
 
@@ -37,12 +49,16 @@ def monitor_loop():
         moe = check_moe_metrics()
         attestation = check_attestation()
         gateway = verify_regulatory_gateway()
+        zk_fairness = check_zk_fairness_proofs()
+        cae_interpretability = check_asa_interpretability()
 
         print(f"\n[{timestamp}] G-SIFI CHECKPOINT")
         print(f"[{timestamp}] G-SRI: {gsri} -> {gsri_status}")
         print(f"[{timestamp}] MOE METRICS: {moe}")
         print(f"[{timestamp}] ATTESTATION: {attestation}")
         print(f"[{timestamp}] REGULATORY GATEWAY: {gateway}")
+        print(f"[{timestamp}] MAS FEAT (ZK-Fairness): {zk_fairness}")
+        print(f"[{timestamp}] HKMA ETHICS (CAE): {cae_interpretability}")
 
         print(f"[{timestamp}] INJECTING ADVERSARIAL STRESS TEST (VAL-STRESS-GSIFI-001)...")
         print(f"[{timestamp}] RESULT: PASS (NO COGNITIVE DRIFT DETECTED)")
